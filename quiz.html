@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <link rel="stylesheet" href="quiz.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body>
+    <div class="contener">
+        <section class='licz'>
+            <span id="czas" style='font-size:30px;'></span>
+            <div class='timebar'>
+                <div id='time1'></div>
+                <div id='time2'></div>
+                <div id='time3'></div>
+                <div id='time4'></div>
+                <div id='time5'></div>
+                <div id='time6'></div>
+                <div id='time7'></div>
+                <div id='time8'></div>
+                <div id='time9'></div>
+                <div id='time10'></div>
+            </div>
+        </section>
+
+        <section class="pytania">
+            <div class="title">
+                <h1>Quiz</h1>
+            </div>
+            <p id='nadpytanie'></p>
+            <p id="pytanie"></p>
+            <div id="inputy">
+                <!-- WPISZ ODPOWIEDZ -->
+                <section id='wpisz' style='display: none;'>
+                    <label id="wpiszodp" for="tekst">Wpisz odpowiedź:</label>
+                    <input id="otwarte" type="text" name="tekst" value='' required>
+                </section>
+                <!-- JEDNA ODPOWIEDZ -->
+                    <section id='jednaOdp' style='display: none;'>
+                        <label id="labelJedenWybor1" for="jedenWybor"></label>
+                        <input type="radio" name="jedenWybor" id="jedenWybor1" value=''>
+                        <label id="labelJedenWybor2" for="jedenWybor"></label>
+                        <input type="radio" name="jedenWybor" id="jedenWybor2" value=''>
+                        <label id="labelJedenWybor3" for="jedenWybor"></label>
+                        <input type="radio" name="jedenWybor" id="jedenWybor3" value=''>
+                    </section>
+                <!-- DWIE ODPOWIEDZI -->
+                    <section id='kilkaOdp' style='display: none;'>
+                        <label id="labelKilkaWyborow1" for="kilkaWyborow"></label>
+                        <input type="checkbox" name="kilkaWyborow" id="kilkaWyborow1" value=''>
+                        <label id="labelKilkaWyborow2" for="kilkaWyborow"></label>
+                        <input type="checkbox" name="kilkaWyborow" id="kilkaWyborow2" value=''>
+                        <label id="labelKilkaWyborow3" for="kilkaWyborow"></label>
+                        <input type="checkbox" name="kilkaWyborow" id="kilkaWyborow3" value=''>
+                    </section>
+                
+                <section class='przyciski'>
+                    <button type="button" id="send"  style='display:none; border-right:solid 1px;'>Zatwierdź</button>
+                    <button type="button" onclick='wylosuj()' id="los">Rozpocznij</button>
+                    <button type="button"style="display:none;" id="ponow" onClick="window.location.reload();">Ponów quiz</button>
+                </section>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+<script src="quiz.js"></script>

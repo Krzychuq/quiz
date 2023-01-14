@@ -1,0 +1,106 @@
+*{box-sizing: border-box; margin: 0;}
+body{font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color:wheat;}
+h1{
+    text-align: center;
+    margin: 40px;
+    font-size: 3.4rem;
+    width: 200px;
+    height: auto;
+    border-radius: 30px;
+    text-decoration: underline;
+    background-color: black;
+    color: white;
+}
+.title{
+    display: grid;
+    place-items: center;
+}
+.contener{
+    width: 100%;
+    height: auto;
+}
+.pytania{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: white;
+    color: black;
+    border: solid 2px black;
+    border-radius: 4px;
+    width: 70%;
+    height: 100%;
+}
+
+#pytanie{
+    position: relative;
+    height: max-content;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+#inputy{
+    padding-top: 20px;
+    padding-bottom: 0;
+    font-size: 18px;
+    width: 100%;
+    height: fit-content;
+}
+    #jedenWybor1, #jedenWybor2, #jedenWybor3,#kilkaWyborow1,#kilkaWyborow2,#kilkaWyborow3{
+        width: 16px;
+        height: 16px;
+    }
+.licz{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: dashed 2px black;
+    border-radius: 3px;
+    text-align: center;
+    width: 120px;
+    height: 60px;
+}
+.timebar{
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border: solid black 1px;
+    border-radius: 3px;
+}
+    .timebar div{
+        width: 10px;
+        height: 10px;
+        background-color: black;
+    }
+
+.przyciski{
+    display: flex;
+    flex-direction: row;
+}
+    .przyciski button{
+        margin-top: 20px;
+        width: 100%;
+        padding: 5px;
+        color: black;
+        border: 0;
+        border-top: solid 1px black;
+        background-color: rgb(255, 153, 0);
+    }
+        .przyciski button:active{
+            opacity: 0.8;
+            transform: scale(0.9);
+        }
+@media screen and (max-width: 500px){
+    .pytania{
+        width: 90%;
+    }
+}
+
